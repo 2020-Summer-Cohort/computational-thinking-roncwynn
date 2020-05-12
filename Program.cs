@@ -83,6 +83,17 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("ARE THESE INTEGERS EQUAL?\n");
 
             // Enter your solution here
+            string inputOne, inputTwo;
+
+            Console.WriteLine("Input First Number:");
+            inputOne = Console.ReadLine();
+            Console.WriteLine("Input Second Number:");
+            inputTwo = Console.ReadLine();
+            Console.WriteLine();
+
+            if (inputOne == inputTwo)
+            { Console.WriteLine($"The numbers  {inputOne} and {inputTwo} are the same number"); }
+            else { Console.WriteLine($"The numbers {inputOne} and {inputTwo} are not equal to each other"); }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -97,6 +108,15 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("EVEN OR ODD?\n");
 
             // Enter your solution here
+
+            Console.WriteLine("Input a Number:");
+            double inputOneDouble = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+
+            if (inputOneDouble % 2 == 0)
+            { Console.WriteLine($"{inputOneDouble} is an EVEN number"); }
+            else
+            { Console.WriteLine($"{inputOneDouble} is an ODD number"); }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
