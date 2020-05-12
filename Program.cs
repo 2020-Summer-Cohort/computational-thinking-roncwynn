@@ -132,6 +132,7 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
+            int letter;
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
