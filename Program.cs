@@ -159,6 +159,20 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
+            //string userInputOne, userInputTwo;
+
+            Console.WriteLine("Input First Number:");
+            int inputOne = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input Second Number:");
+            int inputTwo = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+
+            if (inputOne == inputTwo)
+            { Console.WriteLine($"The two values, {inputOne} and {inputTwo} are EQUAL"); }
+            else if (inputOne > inputTwo)
+            { Console.WriteLine($"{inputOne} is the larger number"); }
+            else { Console.WriteLine($"{inputTwo} is the larger number"); }
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
