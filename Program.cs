@@ -353,13 +353,12 @@ namespace ComputationalThinkingExercises
                         Console.WriteLine("10");
                         break;
                     }
-                //case default:
-                //    { }
-                /* default:
+                 default:
                     {
                         Console.WriteLine("Invalild Input");
+                        break;
                     }
-                    */
+                    
             }
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
