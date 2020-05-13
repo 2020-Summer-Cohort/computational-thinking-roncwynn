@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 
 namespace ComputationalThinkingExercises
 {
@@ -132,7 +133,18 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
-            int letter;
+            string vowels = "aeiou";
+
+            Console.WriteLine("Please enter a letter");
+            char userInput = Convert.ToChar(Console.ReadKey().KeyChar);
+            char letter = Char.ToLower(userInput);
+            Console.WriteLine();
+            
+            if (vowels.Contains(letter))
+            { Console.WriteLine($"{userInput} is a VOWEL"); }
+            else
+            { Console.WriteLine($"{userInput} is a CONSONANT"); }
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
