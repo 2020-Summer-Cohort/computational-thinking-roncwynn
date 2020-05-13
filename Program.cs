@@ -186,6 +186,14 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
+            Console.WriteLine("Input a Number:");
+            double inputOneDouble = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+
+            if (inputOneDouble%3==0)
+            { Console.WriteLine($"{inputOneDouble} IS divisible by 3"); }
+            else { Console.WriteLine($"{inputOneDouble} IS NOT divisible by 3"); }
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -206,6 +214,32 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("RESTAURANT BILL\n");
 
             // Enter your solution here
+
+            /*
+            int numberOfDiners, totalBill;
+
+            Console.WriteLine("How many diners in the party?");
+            numberOfDiners = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("What is the total bill amount?");
+            totalBill = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+
+            //int costPerDinerWhole = totalBill / numberOfDiners;
+            //int costPerDinerRem = totalBill % numberOfDiners;
+
+            float costPerDiner = (totalBill / numberOfDiners);
+            Console.WriteLine($"bill = {totalBill}");
+            Console.WriteLine($"each = {costPerDiner}");
+
+            if (totalBill >= 50)
+            { 
+                Console.WriteLine("Congrats, you receive a 10% discount for a total bill amount greater than $50");
+                Console.WriteLine($"Each person owes ${costPerDiner*.9}.");
+            }
+            else { Console.WriteLine($"Each person owes ${costPerDiner * .95}."); }
+
+    */
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -232,6 +266,20 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("AGE CATEGORY\n");
 
             // Enter your solution here
+
+            Console.WriteLine("Enter the students age:");
+            int personAge = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+
+            if (0 <= personAge && personAge <= 2) { Console.WriteLine("Still in Mama's Arms"); }
+            else if (personAge == 3 || personAge == 4) { Console.WriteLine("Preschool Maniac"); }
+            else if (5 <= personAge && personAge <= 11) { Console.WriteLine("Elementary School"); }
+            else if (12 <= personAge && personAge <= 14) { Console.WriteLine("Middle School"); }
+            else if (15 <= personAge && personAge <= 18) { Console.WriteLine("High School"); }
+            else if (19 <= personAge && personAge <= 22) { Console.WriteLine("College"); }
+            else if (23 <= personAge && personAge <= 65) { Console.WriteLine("Working for the Man"); }
+            else if (66 <= personAge && personAge <= 100) { Console.WriteLine("The Golden Years"); }
+            else { Console.WriteLine("This program is for humans"); }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
