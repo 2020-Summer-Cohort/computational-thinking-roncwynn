@@ -173,6 +173,14 @@ namespace ComputationalThinkingExercises
             { Console.WriteLine($"{inputOne} is the larger number"); }
             else { Console.WriteLine($"{inputTwo} is the larger number"); }
 
+            Console.WriteLine("Input a Third Number:");
+            int inputThree = Convert.ToInt32(Console.ReadLine());
+
+            if (inputOne > inputTwo && inputOne > inputThree) { Console.WriteLine($"{inputOne} is the largest."); }
+            else if (inputTwo > inputOne && inputTwo > inputThree) { Console.WriteLine($"{inputTwo} is the largest."); }
+            else { Console.WriteLine($"{inputThree} is the largest."); }
+
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -215,31 +223,20 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
-            /*
-            int numberOfDiners, totalBill;
-
             Console.WriteLine("How many diners in the party?");
-            numberOfDiners = Convert.ToInt32(Console.ReadLine());
+            decimal numberOfDiners = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine("What is the total bill amount?");
-            totalBill = Convert.ToInt32(Console.ReadLine());
+            decimal totalBill = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine();
-
-            //int costPerDinerWhole = totalBill / numberOfDiners;
-            //int costPerDinerRem = totalBill % numberOfDiners;
-
-            float costPerDiner = (totalBill / numberOfDiners);
-            Console.WriteLine($"bill = {totalBill}");
-            Console.WriteLine($"each = {costPerDiner}");
+            
+            decimal costPerDiner = totalBill / numberOfDiners;
 
             if (totalBill >= 50)
             { 
                 Console.WriteLine("Congrats, you receive a 10% discount for a total bill amount greater than $50");
-                Console.WriteLine($"Each person owes ${costPerDiner*.9}.");
+                Console.WriteLine($"Each person owes ${(costPerDiner*.9m).ToString("C2")}.");
             }
-            else { Console.WriteLine($"Each person owes ${costPerDiner * .95}."); }
-
-    */
-
+            else { Console.WriteLine($"Each person owes ${(costPerDiner * .95m).ToString("C2")}."); }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
