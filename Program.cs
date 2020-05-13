@@ -413,6 +413,22 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
+            Console.WriteLine("Enter a name:");
+            string firstName = Console.ReadLine();
+            Console.WriteLine("Enter another name:");
+            string secondName = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.WriteLine("First way using ==");
+            if (firstName.ToLower() == secondName.ToLower()) { Console.WriteLine("The names are the same."); }
+            else { Console.WriteLine("The names are different."); }
+
+            Console.WriteLine();
+            Console.WriteLine("Second way using .Equals");
+            if (firstName.ToLower().Equals(secondName.ToLower())) { Console.WriteLine("The names are the same."); }
+            else { Console.WriteLine("The names are different."); }
+            Console.WriteLine();
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -426,6 +442,17 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("NAME AND PLACE OF BIRTH\n");
 
             // Enter your solution here
+
+            Console.WriteLine("Please enter your First name:");
+            string firstName = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.WriteLine("Where were you born?");
+            string placeOfBirth = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.WriteLine($"Hi {firstName}.  You were born in {placeOfBirth}.");
+            Console.WriteLine();
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
